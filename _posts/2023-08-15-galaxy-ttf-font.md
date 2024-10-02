@@ -31,8 +31,6 @@ https://github.com/apk-editor/APK-Explorer-Editor/releases/
 
 (저는 [0.24](https://github.com/apk-editor/APK-Explorer-Editor/releases/download/v0.24/app-full-release.apk) 버전을 사용했습니다. 가장 최신 버전을 다운받는 것을 추천드리나, 만약 이 방법을 해보는 도중 앱 모양이 달라 어떻게 해야 할 지 모르겠다면 이 버전을 다운받아 해 보세요.)
 
-<img src="/images/galaxyttf_new/installingaee.jpg" alt="drawing" width="300"/>
-
 ## 2. 폰트 고르기
 https://noonnu.cc 또는 https://gongu.copyright.or.kr/gongu/bbs/B0000018/list.do?menuNo=200195
 에서 한국어 ttf 폰트를 다운받아 주세요.<!--만약 폰트 파일이 otf 파일밖에 없다면, 아래를 참조해 주세요.-->
