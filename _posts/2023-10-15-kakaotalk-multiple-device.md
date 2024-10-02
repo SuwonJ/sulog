@@ -3,8 +3,8 @@ layout: post
 title: 카카오톡 여러 폰에서 같이 쓰기
 date: 2023-10-15 16:40:16
 description: 2개의 스마트폰으로 카카오톡 이용하기
-tags: 카카오톡
-categories: 
+tags: kakaotalk
+categories: syncing
 ---
 
 # 가장 빠른 해결법 - 카카오톡을 이용하지 않기
