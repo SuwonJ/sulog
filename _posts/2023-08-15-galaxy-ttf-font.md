@@ -3,8 +3,8 @@ layout: post
 title: 갤럭시 폰트 ttf 폰트 파일로 아무 폰트로나 바꾸기
 date: 2023-08-15 16:40:16
 description: 폰트를 바꾸어보아요
-tags: galaxy
-categories: 
+tags: font
+categories: galaxy
 ---
 
 # 새 방법을 쓰는 이유
