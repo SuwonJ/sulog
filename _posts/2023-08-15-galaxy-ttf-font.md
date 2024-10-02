@@ -1,3 +1,11 @@
+---
+layout: post
+title: 갤럭시 폰트 ttf 폰트 파일로 아무 폰트로나 바꾸기
+date: 2023-08-15 16:40:16
+description: 폰트를 바꾸어보아요
+tags: galaxy
+categories: 
+---
 
 # 새 방법을 쓰는 이유
 <iframe width="424" height="238" src="https://www.youtube.com/embed/6TzR0KvnJ-E" title="[2022] 갤럭시 기본폰트 ttf 폰트로 아무거로나 바꾸기" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
