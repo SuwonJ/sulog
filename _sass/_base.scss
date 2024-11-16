@@ -3,6 +3,7 @@
  ******************************************************************************/
 
 // Typography
+@import url('https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE.css');
 p,
 h1,
 h2,
@@ -16,6 +17,7 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-family: 'SUITE', sans-serif;
 }
 
 hr {
