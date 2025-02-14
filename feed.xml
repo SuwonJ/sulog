@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://suwonj.github.io/su-log/feed.xml" rel="self" type="application/atom+xml"/><link href="https://suwonj.github.io/su-log/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-02-13T16:54:08+00:00</updated><id>https://suwonj.github.io/su-log/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Making Tasks in Zed</title><link href="https://suwonj.github.io/su-log/blog/2024/zed-tasks/" rel="alternate" type="text/html" title="Making Tasks in Zed"/><published>2024-12-11T00:00:00+00:00</published><updated>2024-12-11T00:00:00+00:00</updated><id>https://suwonj.github.io/su-log/blog/2024/zed-tasks</id><content type="html" xml:base="https://suwonj.github.io/su-log/blog/2024/zed-tasks/"><![CDATA[<h2 id="making-tasks-in-zed">making tasks in Zed</h2> <p>There are two types of tasks in Zed. One is a one that only works in the folder, and the other is a one that is all applied to every workspace. The global one is placed on the location <code class="language-plaintext highlighter-rouge">~/.config/zed/tasks.json</code>, and the local one is placed in <code class="language-plaintext highlighter-rouge">.zed/tasks.json</code>.</p> <p>Using <code class="language-plaintext highlighter-rouge">Ctrl + Shift + P</code> and selecting <code class="language-plaintext highlighter-rouge">zed: open tasks</code> will open the global config, and selecting <code class="language-plaintext highlighter-rouge">zed: open local tasks</code> will open the local config.</p> <h2 id="external-links">External links</h2> <p><a href="https://zed.dev/docs/tasks">Zed documentations</a></p>]]></content><author><name></name></author><category term="zed"/><category term="zed"/><category term="tasks"/><summary type="html"><![CDATA[make tasks in zed to help our shortcut life]]></summary></entry><entry><title type="html">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</title><link href="https://suwonj.github.io/su-log/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/" rel="alternate" type="text/html" title="Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra"/><published>2024-05-14T00:00:00+00:00</published><updated>2024-05-14T00:00:00+00:00</updated><id>https://suwonj.github.io/su-log/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra</id><content type="html" xml:base="https://suwonj.github.io/su-log/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.]]></summary></entry><entry><title type="html">a post with tabs</title><link href="https://suwonj.github.io/su-log/blog/2024/tabs/" rel="alternate" type="text/html" title="a post with tabs"/><published>2024-05-01T00:32:13+00:00</published><updated>2024-05-01T00:32:13+00:00</updated><id>https://suwonj.github.io/su-log/blog/2024/tabs</id><content type="html" xml:base="https://suwonj.github.io/su-log/blog/2024/tabs/"><![CDATA[<p>This is how a post with <a href="https://github.com/Ovski4/jekyll-tabs">tabs</a> looks like. Note that the tabs could be used for different purposes, not only for code.</p> <h2 id="first-tabs">First tabs</h2> <p>To add tabs, use the following syntax:</p> <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">tabs</span><span class="w"> </span><span class="nv">group-name</span><span class="w"> </span><span class="cp">%}</span>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://suwonj.github.io/su-log/feed.xml" rel="self" type="application/atom+xml"/><link href="https://suwonj.github.io/su-log/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-02-14T12:51:08+00:00</updated><id>https://suwonj.github.io/su-log/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">Archlinux 시작하기!</title><link href="https://suwonj.github.io/su-log/blog/2025/arch-install/" rel="alternate" type="text/html" title="Archlinux 시작하기!"/><published>2025-02-14T00:00:00+00:00</published><updated>2025-02-14T00:00:00+00:00</updated><id>https://suwonj.github.io/su-log/blog/2025/arch-install</id><content type="html" xml:base="https://suwonj.github.io/su-log/blog/2025/arch-install/"><![CDATA[<blockquote> <p>[!NOTE] 지금껏 계속 Ubuntu와 Debian, Deb 계열에만 있다가 여러 Arch 권유에 설치해보았다</p> </blockquote> <p>듀얼부팅이라 윈도우부터 간단히 설치한다.</p> <h2 id="윈도우-설치하기">윈도우 설치하기</h2> <p>Shift+F10으로 cmd를 열 수 있다. 열어준 후 <code class="language-plaintext highlighter-rouge">diskpart</code>를 켠다.</p> <pre><code class="language-diskpart">list disk
+sel disk *숫자*
+clean
+convert gpt
+
+cre par efi size=300
+format fs=fat32 quick
+assign letter=S
+
+cre par pri size=200000
+format fs=ntfs quick
+assign letter=C
+</code></pre> <p><code class="language-plaintext highlighter-rouge">assign letter=C</code> 에서 C가 이미 할당된 위치라고 뜬다. 무시해도 되더라 이제 윈도우에 필요한 파티션은 모두 설정되었다. cre par pri로 생성된 파티션을 선택하고 윈도우를 설치한다.</p> <h2 id="아치리눅스-설치하기">아치리눅스 설치하기</h2> <p>https://archlinux.org/download/ 에서 ISO 파일 다운로드. 부팅하면 당황스럽게도 셸만 뜬다.</p> <h3 id="wi-fi-연결하기">Wi-Fi 연결하기</h3> <p>와이파이 환경이라면 인터넷 연결이 필요하다. <code class="language-plaintext highlighter-rouge">iwctl</code>을 이용해서 와이파이에 연결해야 한다.</p> <pre><code class="language-iwctl">device list
+</code></pre> <p>위 명령어로 와이파이 랜카드 장치명을 확인할 수 있다. 아래 명령어로 와이파이를 연결하자.</p> <pre><code class="language-iwctl">station *wlan* connect *SSID*
+</code></pre> <p>자신의 SSID가 헷갈린다면</p> <pre><code class="language-iwctl">station *wlan* scan
+station *wlan* get-networks
+</code></pre> <p>로 SSID 검색을 할 수 있다.</p> <p>연결이 완료되면 <code class="language-plaintext highlighter-rouge">exit</code>로 <code class="language-plaintext highlighter-rouge">iwctl</code>을 끄자.</p> <h2 id="파티셔닝">파티셔닝</h2> <div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lsblk
+</code></pre></div></div> <p>디스크와 파티션의 상태를 확인할 수 있다.</p> <div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cfdisk /dev/<span class="k">*</span>디스크<span class="k">*</span>
+</code></pre></div></div> <p>그러면 테이블이 뜰 것. 윈도우 밑 텅 빈 비할당 구간에 swap, /, /home 세개의 구역을 위한 파티션을 만들 것이다. swap은 hibernation을 위해 보통 램의 1.5배로 할당하고, / 와 /home은 / 에 30 나머지를 home으로 하는 식으로 하더라 /로 합쳐도 무방하지만 리눅스를 너무 자주 갈아엎어 나누어야 할 필요성을 느끼게 되었다.</p> <p>비할당 공간으로 가면 밑에 New라고 뜬다. 누른 후 22G 후 엔터. Type을 Linux swap으로 바꾸어 준다.</p> <p>같은 방식으로 / 와 /home 도 진행. 30G + 나머지로 하였다. 얘네는 Linux partiton? Type을 바꾸어 줄 필요 없다.</p> <p>Write로 마쳐주자.</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkfs.ext4 /dev/<span class="k">*</span>세부파티션루트<span class="k">*</span>
+mkfs.ext4 /dev/<span class="k">*</span>세부파티션홈<span class="k">*</span>
+
+mkswap /dev/<span class="k">*</span>세부파티션swap<span class="k">*</span>
+</code></pre></div></div> <p>파ㅏ티셔닝이 끝났다.</p> <h2 id="archinstall">archinstall</h2> <p>ㅐㄱ쩌는 archinstall로 아치 리눅스를 한번에 설치할 수 있다. ghostty, neovim 같이 설치하였다.</p> <h2 id="nimf">nimf</h2> <p>github 영어설명대로 하면 안된다.</p> <div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 최신 libhangul-git 패키지 설치</span>
+git clone https://aur.archlinux.org/libhangul-git.git
+
+<span class="nb">cd </span>libhangul-git
+
+makepkg <span class="nt">-si</span>
+
+<span class="c"># nimf 설치</span>
+git clone https://github.com/hamonikr/nimf.git
+
+<span class="nb">cd </span>nimf
+
+makepkg <span class="nt">-si</span>
+</code></pre></div></div> <div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvim ~/.xprofile
+</code></pre></div></div> <pre><code class="language-nvim">export GTK_IM_MODULE=nimf
+export QT4_IM_MODULE="nimf"
+export QT_IM_MODULE=nimf
+export XMODIFIERS="@im=nimf"
+</code></pre> <p>넣어준다.</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xmodmap <span class="nt">-pke</span> <span class="o">&gt;</span> ~/xmodmap_original<span class="se">\`</span><span class="sb">``</span>
+xmodmap <span class="nt">-e</span> <span class="s1">'keycode 108 = Hangul'</span>
+xmodmap <span class="nt">-pke</span> <span class="o">&gt;</span> ~/.Xmodmap
+xmodmap ~/.Xmodmap
+</code></pre></div></div> <p>키맵을 바꿀 수 있다. 이후 재부팅 후 nimf config에서 한영키 추가해주면 됨 nimf는 Alt R로 인식하는데 파이어폭스는 아닌가봄 정상작동함.</p> <h2 id="한글-설치">한글 설치</h2> <p>세상에나 한글 입력은 되는데 한글 표시는 되지 않는 기이한 현상이 일어난다.</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://github.com/sun-typeface/SUITE/releases/latest/download/SUITE-ttf.zip
+<span class="nb">mkdir</span> <span class="nt">-p</span> /usr/local/share/fonts
+unzip SUITE-ttf.zip
+<span class="nb">cp</span> /SUITE-ttf/SUITE<span class="k">*</span> /usr/local/share/fonts/
+</code></pre></div></div> <p>SUITE 폰트를 설치하였다. 나눔고딕은 더 쉬울텐데 내가 좋아하지 않는다.</p> <h2 id="zsh-설치">zsh 설치</h2> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pacman <span class="nt">-S</span> zsh
+chsh <span class="nt">-s</span> <span class="si">$(</span>which zsh<span class="si">)</span>
+</code></pre></div></div> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone <span class="nt">--depth</span><span class="o">=</span>1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+<span class="nb">echo</span> <span class="s1">'source ~/powerlevel10k/powerlevel10k.zsh-theme'</span> <span class="o">&gt;&gt;</span>~/.zshrc
+</code></pre></div></div> <h2 id="wifi">wifi</h2> <p>NetworkManage가 안된다. chroot로 해경.</p> <p>파티션 /mnt archchroot /mnt pacman -S networkmanager</p> <p>나와서 데탑에서 sudo systemctl start NetworkManager sudo systemctl enable NetworkManager</p> <h2 id="efi">EFI</h2> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>efibootmgr <span class="nt">-v</span>
+</code></pre></div></div> <p>위 명령어로 확인.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo efibootmgr --create --disk /dev/nvme0n1 --part 1 --label "Arch Linux" --loader /EFI/BOOT/bootx64.efi
+</code></pre></div></div> <p>efi 파일은 있는데 데스크탑이 잡지 않았다. 설정함.</p>]]></content><author><name></name></author><category term="install"/><category term="Archlinux"/><category term="Install"/><summary type="html"><![CDATA[아치리눅스 설치 시작해보기]]></summary></entry><entry><title type="html">Making Tasks in Zed</title><link href="https://suwonj.github.io/su-log/blog/2024/zed-tasks/" rel="alternate" type="text/html" title="Making Tasks in Zed"/><published>2024-12-11T00:00:00+00:00</published><updated>2024-12-11T00:00:00+00:00</updated><id>https://suwonj.github.io/su-log/blog/2024/zed-tasks</id><content type="html" xml:base="https://suwonj.github.io/su-log/blog/2024/zed-tasks/"><![CDATA[<h2 id="making-tasks-in-zed">making tasks in Zed</h2> <p>There are two types of tasks in Zed. One is a one that only works in the folder, and the other is a one that is all applied to every workspace. The global one is placed on the location <code class="language-plaintext highlighter-rouge">~/.config/zed/tasks.json</code>, and the local one is placed in <code class="language-plaintext highlighter-rouge">.zed/tasks.json</code>.</p> <p>Using <code class="language-plaintext highlighter-rouge">Ctrl + Shift + P</code> and selecting <code class="language-plaintext highlighter-rouge">zed: open tasks</code> will open the global config, and selecting <code class="language-plaintext highlighter-rouge">zed: open local tasks</code> will open the local config.</p> <h2 id="external-links">External links</h2> <p><a href="https://zed.dev/docs/tasks">Zed documentations</a></p>]]></content><author><name></name></author><category term="zed"/><category term="zed"/><category term="tasks"/><summary type="html"><![CDATA[make tasks in zed to help our shortcut life]]></summary></entry><entry><title type="html">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</title><link href="https://suwonj.github.io/su-log/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/" rel="alternate" type="text/html" title="Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra"/><published>2024-05-14T00:00:00+00:00</published><updated>2024-05-14T00:00:00+00:00</updated><id>https://suwonj.github.io/su-log/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra</id><content type="html" xml:base="https://suwonj.github.io/su-log/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.]]></summary></entry><entry><title type="html">a post with tabs</title><link href="https://suwonj.github.io/su-log/blog/2024/tabs/" rel="alternate" type="text/html" title="a post with tabs"/><published>2024-05-01T00:32:13+00:00</published><updated>2024-05-01T00:32:13+00:00</updated><id>https://suwonj.github.io/su-log/blog/2024/tabs</id><content type="html" xml:base="https://suwonj.github.io/su-log/blog/2024/tabs/"><![CDATA[<p>This is how a post with <a href="https://github.com/Ovski4/jekyll-tabs">tabs</a> looks like. Note that the tabs could be used for different purposes, not only for code.</p> <h2 id="first-tabs">First tabs</h2> <p>To add tabs, use the following syntax:</p> <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">tabs</span><span class="w"> </span><span class="nv">group-name</span><span class="w"> </span><span class="cp">%}</span>
 
 <span class="cp">{%</span><span class="w"> </span><span class="nt">tab</span><span class="w"> </span><span class="nv">group-name</span><span class="w"> </span><span class="nv">tab-name-1</span><span class="w"> </span><span class="cp">%}</span>
 
@@ -13,16 +67,16 @@ Content 2
 <span class="cp">{%</span><span class="w"> </span><span class="nt">endtab</span><span class="w"> </span><span class="cp">%}</span>
 
 <span class="cp">{%</span><span class="w"> </span><span class="nt">endtabs</span><span class="w"> </span><span class="cp">%}</span>
-</code></pre></div></div> <p>With this you can generate visualizations like:</p> <ul id="log" class="tab" data-tab="08da6ca6-808d-4fe1-a861-afa3f60cb3f0" data-name="log"> <li class="active" id="log-php"> <a href="#">php </a> </li> <li id="log-js"> <a href="#">js </a> </li> <li id="log-ruby"> <a href="#">ruby </a> </li> </ul> <ul class="tab-content" id="08da6ca6-808d-4fe1-a861-afa3f60cb3f0" data-name="log"> <li class="active"> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">var_dump</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
+</code></pre></div></div> <p>With this you can generate visualizations like:</p> <ul id="log" class="tab" data-tab="b702afcd-4d5b-4725-a9d8-3857491a9138" data-name="log"> <li class="active" id="log-php"> <a href="#">php </a> </li> <li id="log-js"> <a href="#">js </a> </li> <li id="log-ruby"> <a href="#">ruby </a> </li> </ul> <ul class="tab-content" id="b702afcd-4d5b-4725-a9d8-3857491a9138" data-name="log"> <li class="active"> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">var_dump</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
 </code></pre></div></div> </li> <li> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello</span><span class="dl">"</span><span class="p">);</span>
 </code></pre></div></div> </li> <li> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pputs</span> <span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span>
-</code></pre></div></div> </li> </ul> <h2 id="another-example">Another example</h2> <ul id="data-struct" class="tab" data-tab="020d2ab0-d458-46b3-beb2-9161d9e1dded" data-name="data-struct"> <li class="active" id="data-struct-yaml"> <a href="#">yaml </a> </li> <li id="data-struct-json"> <a href="#">json </a> </li> </ul> <ul class="tab-content" id="020d2ab0-d458-46b3-beb2-9161d9e1dded" data-name="data-struct"> <li class="active"> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hello</span><span class="pi">:</span>
+</code></pre></div></div> </li> </ul> <h2 id="another-example">Another example</h2> <ul id="data-struct" class="tab" data-tab="9ee7fabe-8b57-442e-b999-b8c3463cf145" data-name="data-struct"> <li class="active" id="data-struct-yaml"> <a href="#">yaml </a> </li> <li id="data-struct-json"> <a href="#">json </a> </li> </ul> <ul class="tab-content" id="9ee7fabe-8b57-442e-b999-b8c3463cf145" data-name="data-struct"> <li class="active"> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hello</span><span class="pi">:</span>
   <span class="pi">-</span> <span class="s2">"</span><span class="s">whatsup"</span>
   <span class="pi">-</span> <span class="s2">"</span><span class="s">hi"</span>
 </code></pre></div></div> </li> <li> <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"hello"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"whatsup"</span><span class="p">,</span><span class="w"> </span><span class="s2">"hi"</span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre></div></div> </li> </ul> <h2 id="tabs-for-something-else">Tabs for something else</h2> <ul id="something-else" class="tab" data-tab="0ca30d93-a599-4b78-a9e7-cdab46201c66" data-name="something-else"> <li class="active" id="something-else-text"> <a href="#">text </a> </li> <li id="something-else-quote"> <a href="#">quote </a> </li> <li id="something-else-list"> <a href="#">list </a> </li> </ul> <ul class="tab-content" id="0ca30d93-a599-4b78-a9e7-cdab46201c66" data-name="something-else"> <li class="active"> <p>Regular text</p> </li> <li> <blockquote> <p>A quote</p> </blockquote> </li> <li> <p>Hipster list</p> <ul> <li>brunch</li> <li>fixie</li> <li>raybans</li> <li>messenger bag</li> </ul> </li> </ul>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included tabs in a post could look like]]></summary></entry><entry><title type="html">a post with typograms</title><link href="https://suwonj.github.io/su-log/blog/2024/typograms/" rel="alternate" type="text/html" title="a post with typograms"/><published>2024-04-29T23:36:10+00:00</published><updated>2024-04-29T23:36:10+00:00</updated><id>https://suwonj.github.io/su-log/blog/2024/typograms</id><content type="html" xml:base="https://suwonj.github.io/su-log/blog/2024/typograms/"><![CDATA[<p>This is an example post with some <a href="https://github.com/google/typograms/">typograms</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">typograms
+</span></code></pre></div></div> </li> </ul> <h2 id="tabs-for-something-else">Tabs for something else</h2> <ul id="something-else" class="tab" data-tab="7b5fbd98-afcb-4386-8885-6801cd577b9c" data-name="something-else"> <li class="active" id="something-else-text"> <a href="#">text </a> </li> <li id="something-else-quote"> <a href="#">quote </a> </li> <li id="something-else-list"> <a href="#">list </a> </li> </ul> <ul class="tab-content" id="7b5fbd98-afcb-4386-8885-6801cd577b9c" data-name="something-else"> <li class="active"> <p>Regular text</p> </li> <li> <blockquote> <p>A quote</p> </blockquote> </li> <li> <p>Hipster list</p> <ul> <li>brunch</li> <li>fixie</li> <li>raybans</li> <li>messenger bag</li> </ul> </li> </ul>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included tabs in a post could look like]]></summary></entry><entry><title type="html">a post with typograms</title><link href="https://suwonj.github.io/su-log/blog/2024/typograms/" rel="alternate" type="text/html" title="a post with typograms"/><published>2024-04-29T23:36:10+00:00</published><updated>2024-04-29T23:36:10+00:00</updated><id>https://suwonj.github.io/su-log/blog/2024/typograms</id><content type="html" xml:base="https://suwonj.github.io/su-log/blog/2024/typograms/"><![CDATA[<p>This is an example post with some <a href="https://github.com/google/typograms/">typograms</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">typograms
 </span><span class="sb">+----+
 |    |---&gt; My first diagram!
 +----+</span>
@@ -654,78 +708,4 @@ index 3bb754ac..a34839c0 100644
     }
   }
 }
-</code></pre> <p>This plot supports both light and dark themes.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included vega lite code could look like]]></summary></entry><entry><title type="html">a post with geojson</title><link href="https://suwonj.github.io/su-log/blog/2024/geojson-map/" rel="alternate" type="text/html" title="a post with geojson"/><published>2024-01-26T17:57:00+00:00</published><updated>2024-01-26T17:57:00+00:00</updated><id>https://suwonj.github.io/su-log/blog/2024/geojson-map</id><content type="html" xml:base="https://suwonj.github.io/su-log/blog/2024/geojson-map/"><![CDATA[<p>This is an example post with some <a href="https://geojson.org/">geojson</a> code. The support is provided thanks to <a href="https://leafletjs.com/">Leaflet</a>. To create your own visualization, go to <a href="https://geojson.io/">geojson.io</a>.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">geojson
-</span><span class="sb">{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -60.11363029935569,
-              -2.904625022183211
-            ],
-            [
-              -60.11363029935569,
-              -3.162613728707967
-            ],
-            [
-              -59.820894493858034,
-              -3.162613728707967
-            ],
-            [
-              -59.820894493858034,
-              -2.904625022183211
-            ],
-            [
-              -60.11363029935569,
-              -2.904625022183211
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      }
-    }
-  ]
-}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-geojson">{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -60.11363029935569,
-              -2.904625022183211
-            ],
-            [
-              -60.11363029935569,
-              -3.162613728707967
-            ],
-            [
-              -59.820894493858034,
-              -3.162613728707967
-            ],
-            [
-              -59.820894493858034,
-              -2.904625022183211
-            ],
-            [
-              -60.11363029935569,
-              -2.904625022183211
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      }
-    }
-  ]
-}
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><category term="maps"/><summary type="html"><![CDATA[this is what included geojson code could look like]]></summary></entry></feed>
+</code></pre> <p>This plot supports both light and dark themes.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included vega lite code could look like]]></summary></entry></feed>
