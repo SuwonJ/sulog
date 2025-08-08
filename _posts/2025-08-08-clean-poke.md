@@ -54,7 +54,7 @@ adb reboot recovery
 컴퓨터에서
 ```
 ADB sideload update.zip으로 롬을 올려준다.
-
+```
 롬이 성공적으로 글로벌 GO롬으로 바뀌었다.
 
 ## 2. 개인정보 지키기 & 최적화하기
@@ -142,7 +142,7 @@ pm uninstall -k --user 0 org.chromium.chrome
 추가로 ONYX 앱이 남아있는지는 
 ```
 pm list packages | grep onyx
-``
+```
 로 확인할 수 있으며, 전체 리스트는 
 ```
 adb shell pm list packages
@@ -152,5 +152,5 @@ adb shell pm list packages
 재설치는 
 ```
 pm install-existing --user 0 [패키지명]
-``
+```
 를 통해 가능하다.
